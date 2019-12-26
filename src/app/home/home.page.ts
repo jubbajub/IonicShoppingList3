@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() {
+    console.log('SEFER:Home Page geladen!');
+  }
 
 }

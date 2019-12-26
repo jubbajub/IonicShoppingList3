@@ -22,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from 'angularfire2';
 import {  FIREBASE_CONFIG } from './firebase.credentials';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { ShoppingListService } from '../services/shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -34,7 +35,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    ShoppingListService
   ],
   bootstrap: [AppComponent]
 })
